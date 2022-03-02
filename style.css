@@ -1,0 +1,127 @@
+/*global styles*/
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 44px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+   .container {
+    width: 1200px;
+  }
+}
+
+.header {
+  background-image: url(./assets/header-image.png);
+  height: 520px;
+  position: relative;
+  background-position-x: 88%;
+  color: #FFF;
+}
+
+.header-links {
+  position: absolute;
+  top: 48px;
+  right: 24.5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.btn {
+  border: 1.5px solid #FFF;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.btn-img {
+  width: 55%;
+}
+
+.header-text-group {
+  width: 75%;
+  position: absolute;
+  top: 121px;
+  left: 24px;
+}
+
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: lowercase;
+  margin: 5px 0;
+  font-size: 40px;
+  letter-spacing: 1.2px;
+}
+
+header h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: lowercase;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+header h4 {
+  letter-spacing: 1.2px;
+  font-size: 13px;
+  font-weight: 300;
+  margin: 5px 0;
+  text-transform: uppercase;
+}
+
+.highlight {
+  font-weight: 700;
+}
+
+.header-image {
+  width: 180px;
+  border: 2px solid #FFF; 
+  border-radius: 50%;
+  position: absolute;
+  bottom: -16px;
+  right: 24px;
+}
+
+.section:nth-child(2n) {
+  background-color: #F4F4F4;
+  height: 324px;
+  overflow: hidden;
+}
+
+.section:nth-child(2n + 1) {
+  background-color: #fff;
+}
+
+.summary-container {
+  position: relative;
+  height: 100%;
+  width: 375px; 
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.summary-container p {
+  position: absolute;
+  top: 49px;
+  left: 24px;
+  right: 24px;
+}
