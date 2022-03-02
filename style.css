@@ -25,9 +25,10 @@ h2 {
   color: #FFF;
   font-size: 22px;
   font-weight: 700;
+  line-height: 27px;
 }
 
-.summary-container, .tech-container, .project-container{
+.summary-container, .tech-container, .project-container, .thoughts-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -127,8 +128,9 @@ header h4 {
 }
 
 .summary-container p {
-  font-family: 'Montserrat', sans-serif;
   margin: 0;
+  font-size: 17px;
+  line-height: 29px;
 }
 
 .arrow {
@@ -137,7 +139,7 @@ header h4 {
   background: red;
   position: relative;
   float: left;
-  top: 8px;
+  top: 12px;
   margin-right: 10px;
 }
 
@@ -186,14 +188,116 @@ header h4 {
   text-transform: uppercase;
 }
 
-.short-info-text {
-  font-family: Roboto;
+.ingress {
+  font-family: 'Roboto';
   font-weight: bold;
   font-size: 17px;
   line-height: 171%;
-  display: flex;
-  align-items: center;
+  display: block;
   letter-spacing: 0.01em;
   color: #FA382F;
   text-transform: uppercase;
+}
+
+.pointer {
+  color: red;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.project-tags {
+  display: flex;
+}
+
+.project-text-group p {
+  line-height: 29px;
+  margin-bottom: 0;
+}
+
+.tag {
+  background: #FDDFE7;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 9px;
+  margin: 0px 5px 42px 0px;
+  padding: 3px 6px;
+}
+
+.project-container h4 {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 119%;
+  text-align: center;
+  color: #FA382F;
+  text-transform: uppercase;
+}
+
+.thoughts-container {
+  font-family: 'Roboto';
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.date {
+  font-size: 17px;
+  line-height: 176%;
+  color: #FA382F;
+  text-transform: uppercase;
+  display: block;
+}
+
+.intro {
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-text-group {
+  margin-top: 30px;
+}
+
+.skills-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 17px;
+  line-height: 29px;
+  margin-bottom: 20%;
+}
+
+.skills-card {
+  margin: 5%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #072BCE;
+  overflow: hidden;
+  font-family: 'Montserrat';
+  padding: 25% 0;
+}
+
+footer h3 {
+  text-transform: uppercase;
+  font-size: 21px;
+}
+
+footer p {
+  margin: 3px;
 }
