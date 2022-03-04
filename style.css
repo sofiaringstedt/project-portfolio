@@ -222,7 +222,7 @@ header h4 {
   padding: 3px 6px;
 }
 
-.project-container h4 {
+.project-container h4, .thoughts-container h4 {
   font-weight: bold;
   font-size: 21px;
   line-height: 119%;
@@ -243,6 +243,24 @@ header h4 {
   color: #FA382F;
   text-transform: uppercase;
   display: block;
+}
+
+.thoughts-links {
+  font-weight: 600;
+  color: black;
+  font-size: 17px;
+  letter-spacing: 1px;
+  margin-bottom: 5%;
+  font-family: 'Roboto';
+  line-height: 30px;
+}
+
+.more-thoughts-date {
+  font-size: 17px;
+  font-weight: lighter;
+  line-height: 176%;
+  color: #FA382F;
+  text-transform: uppercase;
 }
 
 .intro {
@@ -279,26 +297,6 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-footer {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #072BCE;
-  overflow: hidden;
-  font-family: 'Montserrat';
-  padding: 25% 0;
-}
-
-footer h3 {
-  text-transform: uppercase;
-  font-size: 21px;
-}
-
-footer p {
-  margin: 3px;
 }
 
 .more-container {
@@ -353,3 +351,22 @@ footer p {
   width: max-content;
 }
 
+footer {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #072BCE;
+  overflow: hidden;
+  font-family: 'Montserrat';
+  padding: 25% 0;
+}
+
+footer h3 {
+  text-transform: uppercase;
+  font-size: 21px;
+}
+
+footer p {
+  margin: 3px;
+}
