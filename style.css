@@ -6,13 +6,13 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .summary-container, .tech-container, .project-container, .thoughts-container {
     width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-   .container {
+  .summary-container, .tech-container, .project-container, .thoughts-container {
     width: 1200px;
   }
 }
@@ -55,7 +55,7 @@ h2 {
   margin: 0% 2%;
 }
 
-.btn {
+.header-btn {
   border: 1.5px solid #FFF;
   border-radius: 50%;
   width: 40px;
@@ -64,10 +64,9 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
-.btn-img {
+.header-btn-img {
   width: 55%;
 }
 
@@ -232,7 +231,7 @@ header h4 {
   text-transform: uppercase;
 }
 
-.thoughts-container {
+.thoughts-article{
   font-family: 'Roboto';
   font-size: 17px;
   line-height: 30px;
@@ -301,3 +300,56 @@ footer h3 {
 footer p {
   margin: 3px;
 }
+
+.more-container {
+  position: relative;
+  height: 250px;
+}
+
+.more-container h2 {
+  position: absolute;
+  top: 25px;
+  left: 122px;
+}
+
+.more-links {
+  position: absolute;
+  bottom: 65px;
+  right: 118px;
+  display: flex;
+}
+
+.more-btn {
+  border: 1.5px solid red;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.more-btn-img {
+  width: 40%;
+}
+
+.more-links-tab {
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 13px;
+  text-align: center;
+  color: red;
+  text-transform: uppercase;
+  width: max-content;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.more-links-tab p {
+  width: max-content;
+}
+
