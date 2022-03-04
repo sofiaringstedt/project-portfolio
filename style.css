@@ -6,15 +6,27 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .summary-container, .tech-container, .project-container, .thoughts-container {
-    width: 768px;
+  .summary-container, .tech-container, .project-container, .thoughts-container, .more-container, .header-container {
+    width: 500px;
   }
+
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
 }
 
 @media screen and (min-width: 1200px) {
-  .summary-container, .tech-container, .project-container, .thoughts-container {
-    width: 1200px;
+  .summary-container, .tech-container, .project-container, .thoughts-container, .more-container, .header-container {
+    width: 800px;
   }
+
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
 }
 
 h2 {
@@ -28,7 +40,7 @@ h2 {
   line-height: 27px;
 }
 
-.summary-container, .tech-container, .project-container, .thoughts-container {
+.summary-container, .tech-container, .project-container, .thoughts-container, .more-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -39,9 +51,13 @@ h2 {
 .header {
   background-image: url(./assets/header-image.png);
   height: 520px;
-  position: relative;
   background-position-x: 88%;
   color: #FFF;
+}
+
+.header-container {
+  position: relative;
+  height: 520px;
 }
 
 .header-links {
@@ -115,6 +131,12 @@ header h4 {
   width: 180px;
   border: 2px solid #FFF; 
   border-radius: 50%;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .section:nth-child(2n) {
@@ -231,7 +253,9 @@ header h4 {
   text-transform: uppercase;
 }
 
-.thoughts-article{
+.thoughts-article {
+  display: flex;
+  flex-direction: column;
   font-family: 'Roboto';
   font-size: 17px;
   line-height: 30px;
@@ -281,7 +305,6 @@ header h4 {
 .skills-card-wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 70%;
   justify-content: space-between;
   text-align: center;
   font-size: 17px;
@@ -299,23 +322,9 @@ ul {
   padding: 0;
 }
 
-.more-container {
-  position: relative;
-  height: 250px;
-}
-
-.more-container h2 {
-  position: absolute;
-  top: 25px;
-  left: 122px;
-}
-
 .more-links {
-  position: absolute;
-  bottom: 65px;
-  right: 118px;
   display: flex;
-}
+}  
 
 .more-btn {
   border: 1.5px solid red;
@@ -359,7 +368,7 @@ footer {
   background: #072BCE;
   overflow: hidden;
   font-family: 'Montserrat';
-  padding: 25% 0;
+  padding: 25px 0;
 }
 
 footer h3 {
