@@ -6,7 +6,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .summary-container, .tech-container, .project-container, .thoughts-container, .more-container, .header-container {
+  .summary-container, .tech-container, .project-container, .skills-container, .thoughts-container, .more-container, .header-container {
     width: 500px;
   }
 
@@ -15,10 +15,15 @@ body {
     justify-content: center;
   }
 
+  .skills-card-wrapper {
+    flex-wrap: nowrap;
+    width: 500px;
+  }
+  
 }
 
 @media screen and (min-width: 1200px) {
-  .summary-container, .tech-container, .project-container, .thoughts-container, .more-container, .header-container {
+  .summary-container, .tech-container, .project-container, .skills-container, .thoughts-container, .more-container, .header-container {
     width: 800px;
   }
 
@@ -333,6 +338,12 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.more-container {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
 }
 
 .more-links {
