@@ -5,6 +5,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/* media queries */
 @media screen and (min-width: 768px) {
   .summary-container, .tech-container, .project-container, .skills-container, .thoughts-container, .more-container, .header-container {
     width: 500px;
@@ -45,11 +46,32 @@ h2 {
   padding: 5px;
   display: inline-block;
   text-transform: uppercase;
-  background: red;
+  background: #F14A16;
   color: #FFF;
   font-size: 22px;
   font-weight: 700;
   line-height: 27px;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section:nth-child(2n) {
+  background-color: #F4F4F4;
+  overflow: hidden;
+}
+
+.section:nth-child(2n + 1) {
+  background-color: #fff;
+}
+
+.summary-container p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 29px;
 }
 
 .summary-container, .tech-container, .project-container, .thoughts-container, .more-container {
@@ -60,10 +82,11 @@ h2 {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* Header styling */
 .header {
-  background-image: url(./assets/header-image.png);
+  background-image: url(./assets/header.JPG);
   height: 520px;
-  background-position-x: 88%;
+  background-position-y: 73%;
   color: #FFF;
 }
 
@@ -145,31 +168,11 @@ header h4 {
   border-radius: 50%;
 }
 
-.section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.section:nth-child(2n) {
-  background-color: #F4F4F4;
-  overflow: hidden;
-}
-
-.section:nth-child(2n + 1) {
-  background-color: #fff;
-}
-
-.summary-container p {
-  margin: 0;
-  font-size: 17px;
-  line-height: 29px;
-}
-
+/* styling of span, creating the arrow in summary section*/
 .arrow {
   height: 3px;
   width: 50px;
-  background: red;
+  background: #F14A16;
   position: relative;
   float: left;
   top: 12px;
@@ -185,9 +188,10 @@ header h4 {
   top: -3px;
   right: -1px;
   border-radius: 50%;
-  background: red;
+  background: #F14A16;
 }
 
+/* Some container specific styling */
 .tech-container p {
   text-align: center;
   font-size: 17px;
@@ -220,7 +224,7 @@ header h4 {
 .project-title {
   position: absolute;
   top: 25%;
-  left: 25%;
+  left: 15%;
   font-size: 28px;
   letter-spacing: 0.01em;
   color: white;
@@ -234,12 +238,12 @@ header h4 {
   line-height: 171%;
   display: block;
   letter-spacing: 0.01em;
-  color: #FA382F;
+  color: #F14A16;
   text-transform: uppercase;
 }
 
 .pointer {
-  color: red;
+  color: #F14A16;
   font-weight: bolder;
   text-decoration: none;
 }
@@ -282,7 +286,7 @@ header h4 {
 .date {
   font-size: 17px;
   line-height: 176%;
-  color: #FA382F;
+  color: #F14A16;
   text-transform: uppercase;
   display: block;
 }
@@ -297,11 +301,15 @@ header h4 {
   line-height: 30px;
 }
 
+.thoughts-image {
+  width: 100%;
+}
+
 .more-thoughts-date {
   font-size: 17px;
   font-weight: lighter;
   line-height: 176%;
-  color: #FA382F;
+  color: #F14A16;
   text-transform: uppercase;
 }
 
@@ -371,7 +379,7 @@ ul {
   font-weight: bold;
   line-height: 13px;
   text-align: center;
-  color: red;
+  color: #F14A16;
   text-transform: uppercase;
   width: max-content;
   margin-right: 10%;
@@ -389,7 +397,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #072BCE;
+  background: #35589A;
   overflow: hidden;
   font-family: 'Montserrat';
   padding: 25px 0;
