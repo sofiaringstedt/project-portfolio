@@ -197,6 +197,11 @@ header h4 {
   line-height: 1.5;
 }
 
+.love {
+  font-weight: 800;
+  color:#F14A16;
+}
+
 .projects-wrapper {
   display: flex;
   flex-wrap: wrap;
